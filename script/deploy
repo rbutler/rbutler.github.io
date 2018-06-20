@@ -10,7 +10,7 @@ stack exec rbio build
 
 # Get previous files
 git fetch --all
-git checkout master
+git checkout -b master --track origin/master
 git rebase origin/master
 
 # Overwrite existing files with new files
@@ -21,8 +21,9 @@ git add -A
 git commit -m "publish"
 
 # Push
-git push
+git push origin master:master
 
 # Restoration
 git checkout dev
+git branch -D master
 #git stash pop
