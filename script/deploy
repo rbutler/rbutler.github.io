@@ -1,5 +1,5 @@
 # Temporarily store uncommited changes
-git stash
+#git stash
 
 # Verify correct branch
 git checkout dev
