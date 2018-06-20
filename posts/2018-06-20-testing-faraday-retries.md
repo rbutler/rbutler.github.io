@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Testing Faraday retries with WebMock"
-date:   2016-06-08 16:30:16 -0500
 tags: [ruby,testing]
 ---
 We use [Faraday](https://github.com/lostisland/faraday) extensively for our making HTTP requests. We rely on [WebMock](https://github.com/bblimke/webmock) to stub our these requests in rspec. We started encountering some timeout issues, and wanted to provide some retries without relying on a worker system.  Fortunately, **Faraday** builds this in.
