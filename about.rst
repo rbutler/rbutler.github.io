@@ -4,28 +4,6 @@ title: About
 permalink: /about/
 ---
 
-<!-- ### Me
-
-Hi. I'm Ryan Butler.  I go by `rbutler` online.
-
-I live in St. Louis, MO with my wife and two kids.  I went to school at [Notre Dame][nd]. I've previously lived in Oklahoma, Indiana, and Wisconsin.  I enjoy being outdoors, discovering new music, hiking, green tea, and time with my family.
--->
-
-<!--
-I enjoy:
-
-* hiking and camping
-* my family
-* cycling
-* running
-* deep dish pizza
-* ultimate frisbee
-* sci fi and fantasy
-* green tea
-* thai food
-* learning new things
--->
-
 ### Work
 
 
