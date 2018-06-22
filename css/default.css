@@ -120,7 +120,14 @@ section.header {
     margin-bottom: 2em;
 }
 
-#content p, #content h1, #content h2, #content h3, #content h4, #content h5, #content ol, #content ul, #content blockquote {
+#content .sourceCode {
+  width: 600px;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#content p, #content h1, #content h2, #content h3, #content h4, #content h5, #content ol, #content ul, #content blockquote{
     width: 600px;
     margin: auto;
     line-height: 1.75em;
