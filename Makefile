@@ -8,3 +8,6 @@ rebuild:
 
 deploy:
 	sh script/deploy
+
+run:
+	stack exec rbio watch
