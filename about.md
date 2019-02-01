@@ -24,7 +24,7 @@ Previously:
 
 ### Projects
 
-* [This blog](//github.com/rbutler/rbutler.github.io) is available online
+* [This blog](//github.com/rbutler/rbutler.github.io) is available online. It is built on [Hakyll](https://jaspervdj.be/hakyll/)
 
 [nd]: //www.nd.edu/
 [linkedin]: //www.linkedin.com/in/rbutlerdev
