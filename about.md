@@ -4,8 +4,11 @@ title: About
 permalink: /about/
 ---
 
-### Work
+### Me!
 
+I live in Rochester, MN with my wife and 2 (almost 3) children.  We love the midwest and the northwoods.  I enjoy ultimate frisbee, chess, fantasy & science fiction, and cheese.
+
+### Work
 
 Now:
 
