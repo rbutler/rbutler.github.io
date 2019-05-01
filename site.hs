@@ -76,7 +76,7 @@ postCtx =
 
 siteCtx :: Context String
 siteCtx =
-    constField "baseurl" "https://rbutler.dev/" `mappend`
+    constField "baseurl" "" `mappend`
     constField "site_description" "" `mappend`
     constField "instagram_username" "" `mappend`
     constField "twitter_username" "_rbutler_" `mappend`
