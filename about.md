@@ -1,12 +1,12 @@
 ---
-layout: page
 title: About
 permalink: /about/
+headerImg: beach.jpg
 ---
 
 ### Me!
 
-I live in Rochester, MN with my wife and 2 (almost 3) children.  We love the midwest and the northwoods.  I enjoy ultimate frisbee, chess, fantasy & science fiction, and cheese.
+I live in Rochester, MN with my wife and 3 children.  We love the midwest and the northwoods.  I enjoy ultimate frisbee, chess, fantasy & science fiction, coffee, and cheese.
 
 ### Work
 

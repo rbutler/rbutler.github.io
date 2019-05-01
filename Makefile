@@ -1,4 +1,4 @@
-.PHONY: build
+.PHONY: build rebuild deploy run clean
 
 build:
 	stack build
@@ -11,3 +11,6 @@ deploy:
 
 run:
 	stack exec rbio watch
+
+clean:
+	stack exec rbio clean
