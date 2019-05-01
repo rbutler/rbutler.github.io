@@ -2,8 +2,10 @@
 layout: post
 title: "Detective Dinosaur and the Robot"
 tags: [detectiveDinosaur,childrensBooks]
+headerImg: sky.jpg
 ---
-** Detective dinosuar Fan fiction **
+*Detective dinosuar Fan fiction*
+
 # Case Open
 
 Detective Dinosuar and Officer Pterodactyl are at Detective Dinosaur's house.
