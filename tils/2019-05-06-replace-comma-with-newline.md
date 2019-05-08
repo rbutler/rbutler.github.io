@@ -40,3 +40,10 @@ This does not replace inline, but leaves a trailing `,`.
 ```
 
 By far the easiest solution, but continues to leave a trailing `,`.
+
+
+The trailing `,` can be removed by reversing the string and using the `cut` command
+```sheill
+➜  rbutler ~ $ tr '\n' ,  < file | rev | cut -c 2- | rev
+3634371,5049801,4452738
+```
