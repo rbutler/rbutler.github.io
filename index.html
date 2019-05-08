@@ -47,16 +47,19 @@ headerImg: beach.jpg
 
                         <p>Welcome to my blog!</p>
 
-                        <p>I've reproduced a list of recent posts here for your reading pleasure:</p>
-
                         <h3>Recent Posts</h3>
                         $partial("templates/post-list.html")$
 
-                        <p>…or you can find more in the <a href="/archive.html">archives</a>.
+                        <h3>Recent TILs</h3>
+                        $partial("templates/til-list.html")$
 
-                            <hr>
+                        <!-- <h3>Recent Stories</h3>
+                        $partial("templates/story-list.html")$
+                        -->
 
-                            $partial("templates/_pager.html)$
+                        <hr>
+
+                        $partial("templates/_pager.html)$
                     </div>
                 </div>
             </div>

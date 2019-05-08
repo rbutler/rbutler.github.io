@@ -29,6 +29,20 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/default.html" siteCtx
             >>= relativizeUrls
 
+    match "tils/*" $ do
+        route $ setExtension "html"
+        compile $ pandocCompiler
+            >>= loadAndApplyTemplate "templates/til.html"    postCtx
+            >>= loadAndApplyTemplate "templates/default.html" postCtx
+            >>= relativizeUrls
+
+    match "stories/*" $ do
+        route $ setExtension "html"
+        compile $ pandocCompiler
+            >>= loadAndApplyTemplate "templates/story.html"    postCtx
+            >>= loadAndApplyTemplate "templates/default.html" postCtx
+            >>= relativizeUrls
+
     match "posts/*" $ do
         route $ setExtension "html"
         compile $ pandocCompiler
@@ -50,13 +64,44 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/default.html" archiveCtx
                 >>= relativizeUrls
 
+    create ["tils.html"] $ do
+        route idRoute
+        compile $ do
+            tils <- recentFirst =<< loadAll "tils/*"
+            let tilCtx =
+                    listField "tils" postCtx (return tils) `mappend`
+                    constField "title" "TILs"             `mappend`
+                    siteCtx
+
+            makeItem ""
+                >>= loadAndApplyTemplate "templates/tils.html" tilCtx
+                >>= loadAndApplyTemplate "templates/default.html" tilCtx
+                >>= relativizeUrls
+
+    create ["stories.html"] $ do
+        route idRoute
+        compile $ do
+            stories <- recentFirst =<< loadAll "stories/*"
+            let tilCtx =
+                    listField "stories" postCtx (return stories) `mappend`
+                    constField "title" "stories"             `mappend`
+                    siteCtx
+
+            makeItem ""
+                >>= loadAndApplyTemplate "templates/stories.html" tilCtx
+                >>= loadAndApplyTemplate "templates/default.html" tilCtx
+                >>= relativizeUrls
 
     match "index.html" $ do
         route idRoute
         compile $ do
             posts <- recentFirst =<< loadAll "posts/*"
+            tils <- recentFirst =<< loadAll "tils/*"
+            stories <- recentFirst =<< loadAll "stories/*"
             let indexCtx =
                     listField "posts" postCtx (return posts) `mappend`
+                    listField "tils" postCtx (return tils) `mappend`
+                    listField "stories" postCtx (return stories) `mappend`
                     constField "title" "Home"                `mappend`
                     siteCtx
 
