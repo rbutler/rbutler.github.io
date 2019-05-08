@@ -320,6 +320,9 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 <pre class="sheill"><code>➜  rbutler ~ $ tr '\n' ,  &lt; file
 3634371,5049801,4452738,%</code></pre>
 <p>By far the easiest solution, but continues to leave a trailing <code>,</code>.</p>
+<p>The trailing <code>,</code> can be removed by reversing the string and using the <code>cut</code> command</p>
+<pre class="sheill"><code>➜  rbutler ~ $ tr '\n' ,  &lt; file | rev | cut -c 2- | rev
+3634371,5049801,4452738</code></pre>
 
                 <hr>
 
